@@ -1,0 +1,34 @@
+<!-- app/app.component.html-->
+<div class="container">
+  <header class="bg-info" style="height: 90px"></header>
+  <nav>
+  <nav class="navbar navbar-expand bg-warning">
+  <ul class="navbar-nav">
+    <li class="nav-item">
+     <a class="nav-link" href="#" routerLink="/">Trang chủ</a> 
+    </li>
+    <li class="nav-item">
+     <a class="nav-link" href="#" routerLink="dangnhap">Đăng nhập</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#" routerLink="dangky">Đăng ký</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#" routerLink="doipass">Download</a>
+    </li>
+    <li *ngIf="daDangNhap()" class="nav-item">
+      <a class="nav-link" href="#" routerLink="download">Đổi pass</a>
+    </li>
+  </ul>
+  </nav>
+  </nav>
+  <main class="d-flex" style="min-height: 300px;">
+    <article class="col-md-9 bg-body-secondary"> 
+        <router-outlet></router-outlet>
+    </article>
+    <aside class="col-md-3 bg-info-subtle">
+      <a href="#" (click)="thoat()">Thoát</a>
+      <p> Tình trạng đăng nhập: {{ daDangNhap() }}</p>
+    </aside>
+  </main>
+</div>

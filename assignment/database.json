@@ -1,0 +1,402 @@
+{
+  "chitiet": [
+    {
+      "id": "1",
+      "name": "GIÀY BÓNG ĐÁ ADIDAS X CRAZYFAST ELITE TF ĐỎ/TRẮNG",
+      "price": "3689000",
+      "image": "adidas1.webp",
+      "quantity": "99"
+    },
+    {
+      "id": "2",
+      "name": "GIÀY BÓNG ĐÁ ADIDAS X CRAZYFAST ELITE TF",
+      "price": "2986000",
+      "image": "adidas2.webp",
+      "quantity": "99"
+    },
+    {
+      "id": "3",
+      "name": "GIÀY BÓNG ĐÁ ADIDAS X CRAZYFAST ELITE TF",
+      "price": "1634000",
+      "image": "adidas3.webp",
+      "quantity": "99"
+    },
+    {
+      "id": "4",
+      "name": "GIÀY BÓNG ĐÁ ADIDAS X CRAZYFAST ELITE TF",
+      "price": "2992000",
+      "image": "adidas4.webp",
+      "quantity": "99"
+    },
+    {
+      "id": "5",
+      "name": "NIKE AIR ZOOM MERCURIAL VAPOR 15 PRO TF MAD READY - LEMONADE/BLACK",
+      "price": "3837000",
+      "image": "nike1.webp",
+      "quantity": "99"
+    },
+    {
+      "id": "6",
+      "name": "NIKE AIR ZOOM MERCURIAL VAPOR 15 PRO TF MAD READY - LEMONADE/BLACK",
+      "price": "3898000",
+      "image": "nike2.webp",
+      "quantity": "90"
+    },
+    {
+      "id": "7",
+      "name": "NIKE AIR ZOOM MERCURIAL VAPOR 15 PRO TF MAD READY - LEMONADE/BLACK",
+      "price": "2388000",
+      "image": "nike3.webp",
+      "quantity": "67"
+    },
+    {
+      "id": "8",
+      "name": "NIKE AIR ZOOM MERCURIAL VAPOR 15 PRO TF MAD READY - LEMONADE/BLACK",
+      "price": "2693000",
+      "image": "nike4.webp",
+      "quantity": "99"
+    },
+    {
+      "id": "9",
+      "name": "MIZUNO MORELIA NEO IV PRO AS (NEO 4) - TRẮNG/ĐỎ",
+      "price": "3477000",
+      "image": "mizuno.webp",
+      "quantity": "80"
+    },
+    {
+      "id": "10",
+      "name": "MIZUNO MORELIA NEO IV PRO AS (NEO 4) - TRẮNG/ĐỎ",
+      "price": "3682000",
+      "image": "mizuno1.webp",
+      "quantity": "79"
+    },
+    {
+      "id": "11",
+      "name": "MIZUNO MORELIA NEO IV PRO AS (NEO 4) - TRẮNG/ĐỎ",
+      "price": "2432000",
+      "image": "mizuno2.webp",
+      "quantity": "189"
+    },
+    {
+      "id": "12",
+      "name": "MIZUNO MORELIA NEO IV PRO AS (NEO 4) - TRẮNG/ĐỎ",
+      "price": "2597000",
+      "image": "mizuno3.webp",
+      "quantity": "98"
+    },
+    {
+      "id": "13",
+      "name": "PUMA FUTURE MATCH TT ĐỎ/TRẮNG ",
+      "price": "2597000",
+      "image": "puma.webp",
+      "quantity": "98"
+    },
+    {
+      "id": "14",
+      "name": "PUMA FUTURE MATCH TT ĐỎ/TRẮNG ",
+      "price": "2597000",
+      "image": "puma1.webp",
+      "quantity": "98"
+    },
+    {
+      "id": "15",
+      "name": "PUMA FUTURE MATCH TT ĐỎ/TRẮNG ",
+      "price": "2597000",
+      "image": "puma2.webp",
+      "quantity": "98"
+    },
+    {
+      "id": "16",
+      "name": "PUMA FUTURE MATCH TT ĐỎ/TRẮNG ",
+      "price": "2597000",
+      "image": "puma3.webp",
+      "quantity": "98"
+    }
+  ],
+  "user": [
+    {
+      "id": "1",
+      "name": "công tuấn",
+      "email": "tuanhiynh90@gmail.com",
+      "password": "123",
+      "role": "0"
+    },
+    {
+      "id": "2",
+      "name": "công tuấn",
+      "email": "tuanhiynh90@gmail.com",
+      "password": "999",
+      "role": "1"
+    }
+  ],
+  "oders": [
+    {
+      "id": "1861",
+      "name": "công tuấn 2",
+      "phone": "0327744020",
+      "sp": [
+        {
+          "id": "1",
+          "name": "GIÀY BÓNG ĐÁ ADIDAS X CRAZYFAST ELITE TF ĐỎ/TRẮNG",
+          "price": "3689000",
+          "image": "adidas1.webp",
+          "quantity": "99"
+        }
+      ],
+      "idUser": "1",
+      "total": 2388000,
+      "date": "2024-04-08 16:32:33",
+      "status": "oder"
+    },
+    {
+      "id": "8b7d",
+      "name": "C tuấn",
+      "phone": "0327744020",
+      "sp": [
+        {
+          "id": "1",
+          "name": "GIÀY BÓNG ĐÁ ADIDAS X CRAZYFAST ELITE TF ĐỎ/TRẮNG",
+          "price": "3689000",
+          "image": "adidas1.webp",
+          "quantity": "99"
+        },
+        {
+          "id": "1",
+          "name": "GIÀY BÓNG ĐÁ ADIDAS X CRAZYFAST ELITE TF ĐỎ/TRẮNG",
+          "price": "3689000",
+          "image": "adidas1.webp",
+          "quantity": "99"
+        }
+      ],
+      "idUser": "2",
+      "total": 1380000,
+      "date": "2024-04-08 17:35:40",
+      "status": "oder"
+    },
+    {
+      "id": "a576",
+      "name": "công tuấn 2",
+      "phone": "0327744020",
+      "sp": [
+        {
+          "id": "1",
+          "name": "GIÀY BÓNG ĐÁ ADIDAS X CRAZYFAST ELITE TF ĐỎ/TRẮNG",
+          "price": "3689000",
+          "image": "adidas1.webp",
+          "quantity": "99"
+        },
+        {
+          "id": "1",
+          "name": "GIÀY BÓNG ĐÁ ADIDAS X CRAZYFAST ELITE TF ĐỎ/TRẮNG",
+          "price": "3689000",
+          "image": "adidas1.webp",
+          "quantity": "1"
+        }
+      ],
+      "idUser": "2",
+      "total": 2245000,
+      "date": "2024-04-08 20:45:34",
+      "status": "oder"
+    },
+    {
+      "id": "4444",
+      "name": "công tuấn 2",
+      "phone": "0213012392",
+      "sp": [
+        {
+          "id": "f4e6",
+          "name": "balo mới nhất rồi",
+          "image": "bldl.png",
+          "price": "999000",
+          "quantity": 1
+        },
+        {
+          "id": "1",
+          "name": "GIÀY BÓNG ĐÁ ADIDAS X CRAZYFAST ELITE TF ĐỎ/TRẮNG",
+          "price": "3689000",
+          "image": "adidas1.webp",
+          "quantity": "1"
+        }
+      ],
+      "idUser": "2",
+      "total": 1692000,
+      "date": "2024-04-08 21:03:38",
+      "status": "oder"
+    },
+    {
+      "id": "0bfb",
+      "name": "sản phẩm mới nhất",
+      "phone": "0482637485",
+      "sp": [
+        {
+          "id": "1",
+          "name": "GIÀY BÓNG ĐÁ ADIDAS X CRAZYFAST ELITE TF ĐỎ/TRẮNG",
+          "price": "3689000",
+          "image": "adidas1.webp",
+          "quantity": "99"
+        }
+      ],
+      "idUser": "2",
+      "total": 2079000,
+      "date": "2024-04-08 21:05:11",
+      "status": "oder"
+    },
+    {
+      "id": "134d",
+      "name": "công tuấn",
+      "phone": "0482637485",
+      "sp": [
+        {
+          "id": "1",
+          "name": "GIÀY BÓNG ĐÁ ADIDAS X CRAZYFAST ELITE TF ĐỎ/TRẮNG",
+          "price": "3689000",
+          "image": "adidas1.webp",
+          "quantity": "99"
+        }
+      ],
+      "idUser": "2",
+      "total": 3465000,
+      "date": "2024-04-09 14:09:25",
+      "status": "oder"
+    }
+  ],
+  "category": [
+    {
+      "id": "1",
+      "name_category": "Giày sân cỏ tự nhiên"
+    },
+    {
+      "id": "2",
+      "name_category": "Giày sân cỏ nhân tạo"
+    },
+    {
+      "id": "3",
+      "name_category": "Giày cho trẻ em"
+    },
+    {
+      "id": "4",
+      "name_category": "Phụ kiện bóng đá"
+    }
+  ],
+  "sp": [
+    {
+      "id": "1",
+      "name": "GIÀY BÓNG ĐÁ ADIDAS X CRAZYFAST ELITE TF ĐỎ/TRẮNG",
+      "price": "3689000",
+      "image": "adidas1.webp",
+      "quantity": "99"
+    },
+    {
+      "id": "2",
+      "name": "GIÀY BÓNG ĐÁ ADIDAS X CRAZYFAST ELITE TF",
+      "price": "2986000",
+      "image": "adidas2.webp",
+      "quantity": "99"
+    },
+    {
+      "id": "3",
+      "name": "GIÀY BÓNG ĐÁ ADIDAS X CRAZYFAST ELITE TF",
+      "price": "1634000",
+      "image": "adidas3.webp",
+      "quantity": "99"
+    },
+    {
+      "id": "4",
+      "name": "GIÀY BÓNG ĐÁ ADIDAS X CRAZYFAST ELITE TF",
+      "price": "2992000",
+      "image": "adidas4.webp",
+      "quantity": "99"
+    },
+    {
+      "id": "5",
+      "name": "NIKE AIR ZOOM MERCURIAL VAPOR 15 PRO TF MAD READY - LEMONADE/BLACK",
+      "price": "3837000",
+      "image": "nike1.webp",
+      "quantity": "99"
+    },
+    {
+      "id": "6",
+      "name": "NIKE AIR ZOOM MERCURIAL VAPOR 15 PRO TF MAD READY - LEMONADE/BLACK",
+      "price": "3898000",
+      "image": "nike2.webp",
+      "quantity": "90"
+    },
+    {
+      "id": "7",
+      "name": "NIKE AIR ZOOM MERCURIAL VAPOR 15 PRO TF MAD READY - LEMONADE/BLACK",
+      "price": "2388000",
+      "image": "nike3.webp",
+      "quantity": "67"
+    },
+    {
+      "id": "8",
+      "name": "NIKE AIR ZOOM MERCURIAL VAPOR 15 PRO TF MAD READY - LEMONADE/BLACK",
+      "price": "2693000",
+      "image": "nike4.webp",
+      "quantity": "99"
+    },
+    {
+      "id": "9",
+      "name": "MIZUNO MORELIA NEO IV PRO AS (NEO 4) - TRẮNG/ĐỎ",
+      "price": "3477000",
+      "image": "mizuno.webp",
+      "quantity": "80"
+    },
+    {
+      "id": "10",
+      "name": "MIZUNO MORELIA NEO IV PRO AS (NEO 4) - TRẮNG/ĐỎ",
+      "price": "3682000",
+      "image": "mizuno1.webp",
+      "quantity": "79"
+    },
+    {
+      "id": "11",
+      "name": "MIZUNO MORELIA NEO IV PRO AS (NEO 4) - TRẮNG/ĐỎ",
+      "price": "2432000",
+      "image": "mizuno2.webp",
+      "quantity": "189"
+    },
+    {
+      "id": "12",
+      "name": "MIZUNO MORELIA NEO IV PRO AS (NEO 4) - TRẮNG/ĐỎ",
+      "price": "2597000",
+      "image": "mizuno3.webp",
+      "quantity": "98"
+    },
+    {
+      "id": "13",
+      "name": "PUMA FUTURE MATCH TT ĐỎ/TRẮNG ",
+      "price": "2597000",
+      "image": "puma.webp",
+      "quantity": "98"
+    },
+    {
+      "id": "14",
+      "name": "PUMA FUTURE MATCH TT ĐỎ/TRẮNG ",
+      "price": "2597000",
+      "image": "puma1.webp",
+      "quantity": "98"
+    },
+    {
+      "id": "15",
+      "name": "PUMA FUTURE MATCH TT ĐỎ/TRẮNG ",
+      "price": "2597000",
+      "image": "puma2.webp",
+      "quantity": "98"
+    },
+    {
+      "id": "16",
+      "name": "PUMA FUTURE MATCH TT ĐỎ/TRẮNG ",
+      "price": "2597000",
+      "image": "puma3.webp",
+      "quantity": "98"
+    },
+    {
+      "id": "4eea",
+      "name": "3 sọc",
+      "image": "3soc.webp",
+      "price": "2388000",
+      "quantity": 99
+    }
+  ]
+}

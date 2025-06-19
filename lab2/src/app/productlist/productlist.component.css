@@ -1,0 +1,11 @@
+.crop{overflow: hidden;}
+.table-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 100%;
+}
+.image-container {
+    margin: 0 auto; 
+    display: block; 
+}

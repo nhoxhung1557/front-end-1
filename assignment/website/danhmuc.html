@@ -1,0 +1,46 @@
+<nav class="mt-2 me-2 "  aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a style="color: #ad3433;" href="/">Trang Chủ</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Quản lý</li>
+    </ol>
+  </nav>
+  
+  <div class="row">
+    <div class="col-lg-2">
+      <div class="list-group">
+        <a href="#!admin" class="list-group-item list-group-item-action" aria-current="true" >
+        sản phẩm
+        </a>
+        <a href="#!danhmuc" class="list-group-item list-group-item-action active" style="background-color: brown; border-color: aliceblue;">Danh mục</a>
+        <a href="#!adCart" class="list-group-item list-group-item-action">Đơn hàng</a>
+      </div>
+    </div>
+    <div class="col-lg-10">
+      <!-- Button trigger modal -->
+     
+    
+    <table class="table table-bordered" ng-show="category">
+        <tr>
+          <th>ID</th>
+          <th>Tên danh mục</th> 
+        
+        </tr>
+        <tr ng-repeat="dm in category">
+          <td>{{ dm.id }}</td>
+          <td>{{ dm.name_category }}</td>
+         
+        
+      </tr>
+    </table>
+    
+      
+    </div>
+  </div>
+  
+  
+      </div>
+  
+  
+  
+  
+  

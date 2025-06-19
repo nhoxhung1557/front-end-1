@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a class="text-decoration-none text-success small  " href="#">Home</a></li>
+            <li class="breadcrumb-item"><a class="text-decoration-none text-success small  " href="#">cart</a></li>
+          </ol>
+        </nav>
+        <h2>Giỏ Hàng</h2>
+        <table class="table" >
+          <tr>
+            <th>Stt</th>
+            <th>Tên</th>
+            <th>Giá Tiền</th>
+            <th>Số Lượng</th>
+            <th>Tổng Tiền</th>
+            <th>Thao Tác</th>
+          </tr>
+         <tbody>
+          <tr ng-repeat="sp in cart">
+            <td>{{$index}}</td>
+            <td>{{sp.name}}</td>
+            <td>{{sp.price| number:0}}</td>
+            <td>
+              <input type="number" class="form-control" style="width:80px" ng-model="sp.quantity" value="1" ng-change="saveCart()" min="1">
+            <td>{{sp.quantity*sp.price|number:0}}đ</td>
+            <td><a class="btn btn-danger" ng-click="delete($index)" > Xóa</a> </td>
+          </tr>
+         </tbody>
+         <tfoot>
+         <tr>
+          <th colspan="4" >Tổng Thành Tiền :</th>
+          <th>{{tinhTong()|number:0}}đ</th>
+          <th><a href="" ng-click="deleteAll()" class="btn btn-danger" ><i class="fa fa-trash"  ></i>Xóa hết</a></th>
+         </tr>
+         </tfoot>
+        </table>
+        <div class="text-end">
+          <button class="btn btn-outline-success btn-lg mb-3"data-bs-toggle="modal" data-bs-target="#staticBackdrop">Đặt hàng</button>
+        
+        </div>
+      </div>
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title fs-5" id="staticBackdropLabel">Thông tin đặt hàng</h2>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        
+
+        <form>
+          <div class="mb-3">
+            <label for="name" class="form-label">Họ tên</label>
+            <input type="text" class="form-control" id="name" ng-model="name">
+          </div>
+          <div class="mb-3">
+            <label for="phone" class="form-label">Số điện thoại</label>
+            <input type="text" class="form-control" id="phone" ng-model="phone">
+            
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" ng-model="email">
+            
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Kiểm lại</button>
+        <button type="button" class="btn btn-primary" ng-click="checkout()">Xác nhận</button>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+     
+</body>
+</html>

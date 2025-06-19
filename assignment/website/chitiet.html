@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" ng-controller="chitietController">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.min.css">
+   
+    <link rel="stylesheet" href="style.css">
+    <style>
+         body {
+            overflow-x: hidden;
+            margin: 0px;
+            padding: 0px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container mt-4 mb-4">
+        <div class="row">
+            <!-- Product images -->
+            <div class="col-md-5">
+                <img src="img/{{chitiet.image}}" style="border-radius: 10px; width: 2000px;" class="img-fluid mb-3" alt="">
+                <div class="row">
+                    <div class="col-md-3">
+                        <img src="img/{{chitiet.image}}" class="img-thumbnail" alt="">
+                    </div>
+                    <div class="col-md-3">
+                        <img src="img/{{chitiet.image}}" class="img-thumbnail" alt="">
+                    </div>
+                    <div class="col-md-3">
+                        <img src="img/{{chitiet.image}}" class="img-thumbnail" alt="">
+                    </div>
+                    <div class="col-md-3">
+                        <img src="img/{{chitiet.image}}" class="img-thumbnail" alt="">
+                    </div>
+                </div>
+            </div>
+            <!-- Product details -->
+            <div class="col-md-7">
+                <h4>{{chitiet.name}}</h4>
+                <button class="btn " style="background-color: #ad3433; color: #fff;">{{chitiet.price|number:0}}đ</button>
+                <div class="d-flex mt-2">
+                    <p class="me-3"> <i class="fa-solid fa-comments-dollar"  style="color: rgb(161, 161, 32);"></i> mua ngay giá sốc!</p>
+                    <p> <i class="fa-solid fa-fire" style="color: rgb(161, 161, 32);"></i> không mất thời gian xem live ảo!</p>
+                </div>
+                <p class="mt-3"><i class="fa-regular fa-circle-check"></i> CHƯƠNG TRÌNH ĐẤU GIÁ TOÀN THỊ TRƯỜNG! Nếu khách hàng tìm được điểm bán giá sản phẩm rẻ hơn vui lòng gửi thông tin cho ZÓNG. Chúng tôi sẽ bán rẻ hơn 3% so với giá thấp nhất bạn tìm được!</p>
+                <ul>
+                    <li>Form: Dành cho chân hơi bè hoặc thon. Còn bè quá thì hơi khó đi</li>
+                    <li>Da: Giả da cao cấp nên khá mềm.</li>
+                    <li>Lưỡi gà và cổ là vải chun co giãn liền thân giày giúp ôm chân và hạn chế cao su vào giày</li>
+                    <li>Đế: gót êm, tuy nhiên lúc bẻ chân có vẻ hơi cứng 1 chút, cần 2,3 trận mới bắt đầu mềm ra được</li>
+                    <li>Thương hiệu: Adidas</li>
+                    <li>Màu sắc: Đỏ</li>
+                    <li> + Các cầu thủ đang đi Puma Future: Neymar, Luis Suárez, Thiago Silva, Ederson. Có thể thấy đối này khá đa năng khi được nhiều cầu thủ ở nhiều vị trí từ tiền đao, tiền vệ đến thủ môn sử dụng</li>
+                </ul>
+                
+                <div class="row">
+                    <h5>LINK ĐẶT HÀNG</h5>
+<p class="d-inline-flex gap-1">
+    <a class="text-dark" data-bs-toggle="collapse" href="#shopeeCollapse" role="button" aria-expanded="false" aria-controls="shopeeCollapse">
+        <i class="fab fa-shopify"></i> SHOPEE
+    </a>
+</p>
+<div class="collapse" id="shopeeCollapse">
+    <ul>
+        <li>khu vực TPHCM</li>
+        <li>Khu vực HÀ NỘI</li>
+    </ul>
+</div>
+
+<br>
+
+<p class="d-inline-flex gap-1">
+    <a class="text-dark" data-bs-toggle="collapse" href="#lazadaCollapse" role="button" aria-expanded="false" aria-controls="lazadaCollapse">
+        <i class="fab fa-laravel"></i> LAZADA
+    </a>
+</p>
+<div class="collapse" id="lazadaCollapse">
+    <ul>
+        <li>khu vực TPHCM</li>
+        <li>Khu vực HÀ NỘI</li>
+    </ul>
+</div>
+
+                </div>
+                <div class="d-flex">
+                    <div class="quantity me-3">
+                        <input type="number" style="width: 50px; height:35px; border-radius: 10px;" value="1">
+                    </div>
+                    <div class="them">
+                        <button class="btn btn-outline-secondary" ng-click="addTocart(product)" style="background-color: #ad3433; color: white;">Thêm Vào Giỏ Hàng</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+</body>
+</html>
+<script src="bootstrap-5.3.3-dist/js/bootstrap.bundle.js"></script>
+<script src="https://kit.fontawesome.com/e7db34f14d.js" crossorigin="anonymous"></script>

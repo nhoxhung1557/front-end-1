@@ -1,0 +1,33 @@
+<div class="card">
+    <div class="card-header">DANH SÁCH SẢN PHẨM 
+        <label class="float-end">
+        </label>
+    </div>
+    <div class="card-body">
+        <table class="table table-bordered table-hover">
+            <thead> <tr>
+                     <th>Hình</th> <th>Tên SP</th> <th>Mã SP</th>
+                     <th>Ngày</th> <th>Đánh giá</th>
+                    </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor='let p of products'>
+                    <td><img src="{{p.urlImage}}" height="100" ></td>
+                    <td>{{ p.tensp | uppercase }}</td>
+                    <td>{{ p.code }}</td>
+                    <td>{{ p.ngay | date:'dd/MM/yyyy' }}</td>
+                    <td><div class="crop" [style.width.px]="p.starRate*90/5" title="rating">
+                        <div style="width: 90px">
+                            <i class="bi bi-star"></i>
+                            <i class="bi bi-star"></i>
+                            <i class="bi bi-star"></i>
+                            <i class="bi bi-star"></i>
+                            <i class="bi bi-star"></i>
+                        </div>
+                    </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table> 
+
+

@@ -1,0 +1,167 @@
+#listSP {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 24px;
+  padding: 24px;
+  background-color: #f8f9fa;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+  .product-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+
+  .product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+
+  .product-header {
+    padding: 10px;
+    background-color: #f8f9fa;
+  }
+
+.product-header h3 {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.product-body {
+  padding: 16px;
+}
+
+.product-image {
+  position: relative;
+  width: 100%;
+  height: 220px;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.product-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.product-image:hover img {
+  transform: scale(1.08);
+}
+
+.product-description {
+  margin: 16px 0;
+  color: #4b5563;
+  line-height: 1.6;
+  font-size: 0.925rem;
+  height: 75px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.product-price {
+  font-size: 1.5rem;
+  color: #10b981;
+  font-weight: 600;
+  margin: 16px 0;
+}
+
+.product-rating {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 12px 0;
+}
+
+.stars {
+  color: #fbbf24;
+  letter-spacing: 2px;
+  font-size: 1.1rem;
+}
+
+.rating-number {
+  color: #6b7280;
+  font-size: 0.9rem;
+}
+
+.view-details {
+  width: 100%;
+  padding: 12px;
+  background: #6366f1;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.view-details:hover {
+  background: #4f46e5;
+  transform: translateY(-2px);
+}
+
+.header {
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+  color: white;
+  padding: 16px;
+  border-radius: 12px;
+  margin-bottom: 24px;
+  font-size: 1.25rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+#ds {
+  max-width: 800px;
+  margin: 24px auto;
+  padding: 24px;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+#ds p {
+  padding: 16px;
+  margin: 8px 0;
+  background: #f8fafc;
+  border-radius: 8px;
+  font-size: 1rem;
+  color: #334155;
+  border-left: 4px solid #6366f1;
+  transition: all 0.2s ease;
+}
+
+#ds p:hover {
+  background: #f1f5f9;
+  transform: translateX(4px);
+}
+
+.student-avatar {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border: 3px solid #007bff;
+}
+
+.scientist-item:hover {
+  background-color: #f8f9fa;
+  transition: background-color 0.3s ease;
+}
+
+.scientist-list {
+  max-height: 500px;
+  overflow-y: auto;
+}

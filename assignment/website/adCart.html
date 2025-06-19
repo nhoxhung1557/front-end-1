@@ -1,0 +1,61 @@
+<nav class="mt-2 me-2 "  aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a style="color: #ad3433;" href="/">Trang Chủ</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Quản lý</li>
+  </ol>
+</nav>
+
+<div class="row">
+  <div class="col-lg-2">
+    <div class="list-group">
+      <a href="#!admin" class="list-group-item list-group-item-action" aria-current="true" >
+      sản phẩm
+      </a>
+      <a href="#!danhmuc" class="list-group-item list-group-item-action">Danh mục</a>
+      <a href="#!adCart" class="list-group-item list-group-item-action active" style="background-color: brown; border-color: aliceblue;">Đơn hàng</a>
+    </div>
+  </div>
+  <div class="col-lg-10">
+    <!-- Button trigger modal -->
+   
+  
+  <table class="table table-bordered" ng-show="oders">
+      <tr>
+        <th>ID</th>
+        <th>Tên</th> <!-- Đổi "Tên" thành "Họ và tên" để phản ánh chính xác dữ liệu -->
+        <th>Phone</th>
+        <th>Tổng tiền</th>
+        <th>Ngày</th>
+        <th>Trạng thái</th>
+        <th>Tên sản phẩm</th>
+       <th>ID user</th>
+      </tr>
+      <tr ng-repeat="order in oders">
+        <td>{{ order.id }}</td>
+        <td>{{ order.name }}</td>
+        <td>{{ order.phone }}</td>
+        <td>{{ order.total | number:0 }}đ</td>
+        <td>{{ order.date }}</td>
+        <td>{{ order.status }}</td>
+        <!-- Sử dụng một vòng lặp ng-repeat để lặp qua mỗi sản phẩm trong đơn hàng -->
+        <td>
+            <div ng-repeat="product in order.sp">
+                {{ product.name }} 
+            </div>
+        </td>
+  
+        <td>{{order.idUser}}</td>
+      
+    </tr>
+  </table>
+  
+    
+  </div>
+</div>
+
+
+    </div>
+
+
+
+

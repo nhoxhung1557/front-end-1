@@ -1,0 +1,139 @@
+<nav class="mt-2 me-2 "  aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="/"  style="color: #ad3433;">Trang Chủ</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Quản lý</li>
+    </ol>
+  </nav>
+  
+  <div class="row">
+    <div class="col-lg-2">
+      <div class="list-group">
+        <a href="#!admin" class="list-group-item list-group-item-action active" aria-current="true" style="background-color: brown; border-color: aliceblue;">
+        sản phẩm
+        </a>
+        <a href="#!danhmuc" class="list-group-item list-group-item-action">Danh mục</a>
+        <a href="#!adCart" class="list-group-item list-group-item-action">Đơn hàng</a>
+      </div>
+    </div>
+    <div class="col-lg-10">
+      <!-- Button trigger modal -->
+      <button type="button" class="btn btn-primary mb-3" style="background-color: #ad3433; border-color: aliceblue;" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        Thêm sản phẩm
+      </button>
+    
+    <table class="table table-bordered" ng-show="sp">
+        <tr>
+            <th>Stt</th>
+            <th>Tên</th>
+            <th>Hình</th>
+            <th>Giá sp</th>
+            <th>Số lượng</th>
+            <th>Hành động</th> <!-- Cột mới thêm -->
+        </tr>
+        <tr ng-repeat="show in sp">
+            <td>{{show.id}}</td>
+            <td>{{show.name}}</td>
+            <td>
+                <img style="width: 50px; height: 50px;"
+                    src="img/{{show.image}}"
+                    class="card-img-top"
+                    alt="img/motor-gear-Small.png"
+                />
+            </td>
+            <td>{{show.price|number:0}}đ</td>
+            <td>{{show.quantity}}</td>
+            <td>
+                <!-- Button để sửa sản phẩm -->
+                <button ng-click="editpr(show)" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                    Sửa
+                  </button>
+                <!-- Button để xóa sản phẩm -->
+                <button ng-click="deletepr(show.id)"class="btn btn-danger">Xóa</button>
+            </td>
+        </tr>
+    </table>
+    
+      
+    </div>
+  </div>
+  
+
+      </div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Thông tin sản phẩm</h1>
+          <button type="button" class="btn-close" id="down" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Tên sản phẩm</label>
+              <input  type="text" ng-model="name" class="form-control w-100" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Hình sản phẩm</label>
+              <input  type="file" ngf-select file-model="hinh" ng-model="image" name="file" class="form-control w-100" id="exampleInputEmail1" aria-describedby="emailHelp" onchange="angular.element(this).scope().setFile(this)">
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Giá sản phẩm</label>
+              <input  ng-model="price"  type="text" class="form-control w-100" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Số lượng sản phẩm</label>
+              <input  ng-model="quantity"  type="number" min="1" class="form-control w-100" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>  
+        
+              
+             
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+          <button ng-click="addpr()" type="button" class="btn btn-primary">Xác nhận</button>
+        </div>
+      </div>
+    </div>
+</div>
+  <!--  -->
+
+
+  <!-- edit -->
+
+  <!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="staticBackdropLabel">Sửa thông tin</h1>
+                <button type="button" class="btn-close" id="closeedit" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Tên sản phẩm</label>
+                        <input type="text" ng-model="edit.name" class="form-control w-100" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Hình sản phẩm</label>
+                        <input type="file" ngf-select file-model="hinh  " ng-model="edit.image" name="file" class="form-control w-100" id="exampleInputEmail1" aria-describedby="emailHelp" onchange="angular.element(this).scope().setEditFile(this)">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Giá gốc sản phẩm</label>
+                        <input ng-model="edit.price" type="text" class="form-control w-100" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+                <button ng-click="updatepr()" type="button" class="btn btn-primary">Cập nhật</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+  </div>
+  </div>

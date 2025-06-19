@@ -1,0 +1,159 @@
+.product-detail-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  max-width: 1000px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.product-detail-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.product-detail-header h2 {
+  margin: 0;
+  color: #343a40;
+}
+
+.close-button {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #6c757d;
+}
+
+.close-button:hover {
+  color: #343a40;
+}
+
+.product-detail-content {
+  display: flex;
+  padding: 20px;
+  gap: 30px;
+}
+
+.product-image-container {
+  flex: 0 0 40%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.product-large-image {
+  max-width: 100%;
+  max-height: 400px;
+  object-fit: contain;
+  border-radius: 4px;
+}
+
+.product-info {
+  flex: 1;
+}
+
+.product-info h3 {
+  margin-top: 0;
+  font-size: 24px;
+  color: #212529;
+}
+
+.product-code {
+  color: #6c757d;
+  margin-bottom: 15px;
+}
+
+.product-price {
+  font-size: 24px;
+  font-weight: bold;
+  color: #dc3545;
+  margin-bottom: 15px;
+}
+
+.product-rating {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.stars {
+  color: #ffc107;
+  font-size: 20px;
+  margin-right: 8px;
+}
+
+.rating-number {
+  color: #6c757d;
+}
+
+.product-description {
+  margin-bottom: 20px;
+}
+
+.product-description h4 {
+  margin-bottom: 8px;
+  color: #343a40;
+}
+
+.product-description p {
+  color: #495057;
+  line-height: 1.6;
+}
+
+.product-date {
+  color: #6c757d;
+  margin-bottom: 20px;
+}
+
+.product-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.edit-button, .delete-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.edit-button {
+  background-color: #007bff;
+  color: white;
+}
+
+.edit-button:hover {
+  background-color: #0069d9;
+}
+
+.delete-button {
+  background-color: #dc3545;
+  color: white;
+}
+
+.delete-button:hover {
+  background-color: #c82333;
+}
+
+@media (max-width: 768px) {
+  .product-detail-content {
+    flex-direction: column;
+  }
+  
+  .product-image-container {
+    margin-bottom: 20px;
+  }
+}
